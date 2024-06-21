@@ -139,7 +139,7 @@ process preprocess_reads {
     */
 
     label "isoforms"
-    cpus 4
+    cpus 24
     memory "1000 GB"
     input:
         tuple val(meta), path('seqs.fastq.gz')
@@ -176,7 +176,7 @@ process build_minimap_index{
     */
     label "isoforms"
     cpus params.threads
-    memory "31 GB"
+    memory "16 GB"
 
     input:
         path reference
