@@ -139,8 +139,8 @@ process preprocess_reads {
     */
 
     label "isoforms"
-    cpus 32
-    memory "1000 GB"
+    cpus 24
+    memory "750 GB"
     input:
         tuple val(meta), path('seqs.fastq.gz')
     output:
