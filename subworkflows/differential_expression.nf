@@ -136,7 +136,7 @@ process map_transcriptome{
     */
     label "isoforms"
     cpus params.threads
-    memory "16 GB"
+    memory "500 GB"
 
     input:
        tuple val(meta), path (fastq_reads), path(index)
