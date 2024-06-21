@@ -135,8 +135,8 @@ process map_transcriptome{
     Filter internally-primed reads.
     */
     label "isoforms"
-    cpus params.threads
-    memory "500 GB"
+    cpus 32
+    memory "1000 GB"
 
     input:
        tuple val(meta), path (fastq_reads), path(index)
